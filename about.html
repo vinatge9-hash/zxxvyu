@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Niyantri Cafe - About Us</title>
+  <meta name='description' content='Learn about Niyantri Cafe, our story, values, and commitment to great coffee and community.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans'>
+  <header>
+    <nav class='bg-white shadow sticky top-0 z-50' aria-label='Main navigation'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <a href='index.html' class='text-2xl font-bold text-[#3C2415]'>Niyantri Cafe</a>
+          <div class='hidden md:flex space-x-6'>
+            <a href='index.html' class='text-gray-700 hover:text-[#D2B48C]'>Home</a>
+            <a href='menu.html' class='text-gray-700 hover:text-[#D2B48C]'>Menu</a>
+            <a href='about.html' class='text-gray-700 hover:text-[#D2B48C]'>About Us</a>
+            <a href='contact.html' class='text-gray-700 hover:text-[#D2B48C]'>Contact</a>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-gray-700 focus:outline-none'>☰</button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='hidden md:hidden'>
+        <a href='index.html' class='block px-4 py-2 text-sm text-gray-700'>Home</a>
+        <a href='menu.html' class='block px-4 py-2 text-sm text-gray-700'>Menu</a>
+        <a href='about.html' class='block px-4 py-2 text-sm text-gray-700'>About Us</a>
+        <a href='contact.html' class='block px-4 py-2 text-sm text-gray-700'>Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class='min-h-screen bg-[#F5F5F5] flex items-center'>
+      <div class='max-w-5xl mx-auto px-4 py-16'>
+        <h1 class='font-[Montserrat] text-4xl md:text-5xl mb-4 text-[#3C2415]'>Our Story</h1>
+        <p class='mb-4 font-[Open Sans] text-lg text-[#333]'>Niyantri Cafe began as a small, community-driven coffee spot with a simple belief: great coffee brings people together. We source beans from sustainable farms and roast in small batches to preserve flavor and aroma. Our space is designed for conversation, creativity, and connection.</p>
+        <p class='mb-4 font-[Open Sans] text-lg text-[#333]'>From the first pour to the last sip, we aim to create a welcoming atmosphere where everyone feels at home. Welcome to the family.</p>
+        <div class='mt-6'>
+          <a href='menu.html' class='bg-[#D2B48C] text-[#3C2415] px-6 py-3 rounded-full font-semibold hover:bg-[#e6bd96] transition-all'>Explore Menu</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold mb-2'>Niyantri Cafe</h3>
+        <p class='text-sm text-gray-200'>A community-focused cafe serving thoughtful coffee and pastries since 2010.</p>
+      </div>
+      <div>
+        <h4 class='text-lg mb-2'>Location</h4>
+        <p>123 Bean Street, City</p>
+      </div>
+      <div>
+        <h4 class='text-lg mb-2'>Hours</h4>
+        <p>Mon-Fri: 7:00 AM - 8:00 PM</p>
+        <p>Sat-Sun: 8:00 AM - 6:00 PM</p>
+      </div>
+      <div>
+        <h4 class='text-lg mb-2'>Follow</h4>
+        <p>Instagram / Facebook</p>
+      </div>
+    </div>
+    <div class='border-t border-gray-700 py-4'>
+      <div class='text-center text-sm'>© 2025 Niyantri Cafe. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) { btn.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }
+  </script>
+</body>
+</html>

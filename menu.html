@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Niyantri Cafe - Menu</title>
+  <meta name='description' content='Explore the menu at Niyantri Cafe, featuring specialty coffees, pastries, and light bites.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans'>
+  <header>
+    <nav class='bg-white shadow sticky top-0 z-50' aria-label='Main navigation'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <a href='index.html' class='text-2xl font-bold text-[#3C2415]'>Niyantri Cafe</a>
+          <div class='hidden md:flex space-x-6'>
+            <a href='index.html' class='text-gray-700 hover:text-[#D2B48C]'>Home</a>
+            <a href='menu.html' class='text-gray-700 hover:text-[#D2B48C]'>Menu</a>
+            <a href='about.html' class='text-gray-700 hover:text-[#D2B48C]'>About Us</a>
+            <a href='contact.html' class='text-gray-700 hover:text-[#D2B48C]'>Contact</a>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-gray-700 focus:outline-none'>☰</button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='hidden md:hidden'>
+        <a href='index.html' class='block px-4 py-2 text-sm text-gray-700'>Home</a>
+        <a href='menu.html' class='block px-4 py-2 text-sm text-gray-700'>Menu</a>
+        <a href='about.html' class='block px-4 py-2 text-sm text-gray-700'>About Us</a>
+        <a href='contact.html' class='block px-4 py-2 text-sm text-gray-700'>Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class='min-h-screen bg-[#F5DEB3] py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h1 class='font-[Montserrat] text-4xl md:text-5xl mb-6 text-[#3C2415]'>Menu</h1>
+        <p class='font-[Open Sans] text-lg text-[#3C2415] mb-8'>Indulge in our carefully crafted beverages and fresh pastries.</p>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <!-- Espresso -->
+          <article class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.pexels.com/photos/15293893/pexels-photo-15293893.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Espresso cup' class='w-full h-40 object-cover rounded-md'>
+            <h3 class='mt-2 font-[Montserrat] text-lg'>Espresso</h3>
+            <p class='text-sm text-gray-700'>Rich, bold shot with a velvety crema.</p>
+            <div class='mt-2 text-[#3C2415] font-semibold'>$2.75</div>
+          </article>
+          <!-- Cappuccino -->
+          <article class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.pexels.com/photos/302897/pexels-photo-302897.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Cappuccino' class='w-full h-40 object-cover rounded-md'>
+            <h3 class='mt-2 font-[Montserrat] text-lg'>Cappuccino</h3>
+            <p class='text-sm text-gray-700'>Creamy foam, balanced with espresso richness.</p>
+            <div class='mt-2 text-[#3C2415] font-semibold'>$3.50</div>
+          </article>
+          <!-- Latte -->
+          <article class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.unsplash.com/photo-1695031347034-b13222e5bf7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw4fHxsYXR0ZSUyMHdpdGglMjBsYXR0ZSUyMGFydHxlbnwwfDB8fHwxNzU4NzE5NTE4fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Latte' class='w-full h-40 object-cover rounded-md'>
+            <h3 class='mt-2 font-[Montserrat] text-lg'>Latte</h3>
+            <p class='text-sm text-gray-700'>Silky milk, espresso, and a touch of sweetness.</p>
+            <div class='mt-2 text-[#3C2415] font-semibold'>$4.00</div>
+          </article>
+          <!-- Americano -->
+          <article class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.pexels.com/photos/1879318/pexels-photo-1879318.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Americano' class='w-full h-40 object-cover rounded-md'>
+            <h3 class='mt-2 font-[Montserrat] text-lg'>Americano</h3>
+            <p class='text-sm text-gray-700'>Smooth, long black coffee with a clean finish.</p>
+            <div class='mt-2 text-[#3C2415] font-semibold'>$3.00</div>
+          </article>
+          <!-- Cold Brew -->
+          <article class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.unsplash.com/photo-1708166210389-32c962ca8c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxjb2xkJTIwYnJldyUyMGJvdHRsZXxlbnwwfDB8fHwxNzU4NzgzOTMzfDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Cold Brew' class='w-full h-40 object-cover rounded-md'>
+            <h3 class='mt-2 font-[Montserrat] text-lg'>Cold Brew</h3>
+            <p class='text-sm text-gray-700'>Smooth, refreshing with notes of chocolate and caramel.</p>
+            <div class='mt-2 text-[#3C2415] font-semibold'>$4.25</div>
+          </article>
+          <!-- Mocha -->
+          <article class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.unsplash.com/photo-1686998424412-5076bc0bd8e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxtb2NoYSUyMHdpdGglMjB3aGlwcGVkJTIwY3JlYW18ZW58MHwwfHx8MTc1ODc4MzkzNHww&ixlib=rb-4.1.0&q=80&w=1080' alt='Mocha' class='w-full h-40 object-cover rounded-md'>
+            <h3 class='mt-2 font-[Montserrat] text-lg'>Mocha</h3>
+            <p class='text-sm text-gray-700'>Espresso, chocolate, and whipped cream topping.</p>
+            <div class='mt-2 text-[#3C2415] font-semibold'>$4.75</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold mb-2'>Niyantri Cafe</h3>
+        <p class='text-sm text-gray-200'>Your neighborhood coffee haven offering ethically sourced beans and fresh pastries.</p>
+      </div>
+      <div>
+        <h4 class='text-lg mb-2'>Contact</h4>
+        <p>123 Bean Street</p>
+        <p>City, ST 00000</p>
+        <p>(555) 123-4567</p>
+      </div>
+      <div>
+        <h4 class='text-lg mb-2'>Hours</h4>
+        <p>Mon-Fri: 7:00 AM - 8:00 PM</p>
+        <p>Sat-Sun: 8:00 AM - 6:00 PM</p>
+      </div>
+      <div>
+        <h4 class='text-lg mb-2'>Quick Links</h4>
+        <ul class='space-y-2'>
+          <li><a href='index.html' class='hover:underline'>Home</a></li>
+          <li><a href='about.html' class='hover:underline'>About</a></li>
+          <li><a href='contact.html' class='hover:underline'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='border-t border-gray-700 py-4'>
+      <div class='text-center text-sm'>© 2025 Niyantri Cafe. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    }
+  </script>
+</body>
+</html>
